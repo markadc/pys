@@ -1,7 +1,7 @@
 package main
 
 import (
-	"CSDN/py"
+	"CSDN/pys"
 	"fmt"
 	"log"
 	"os"
@@ -43,7 +43,7 @@ func main() {
 			"noMore":       "false",
 			"username":     username,
 		}
-		resp, _ := py.GET(url, headers, params)
+		resp, _ := pys.GET(url, headers, params)
 		jsonData, _ := resp.JSON()
 
 		v := jsonData["data"].(map[string]any)["list"]
@@ -74,7 +74,7 @@ func main() {
 func task(link, title string, headers map[string]string) {
 	defer wg.Done()
 	params := map[string]string{}
-	w, err := py.GET(link, headers, params)
+	w, err := pys.GET(link, headers, params)
 	if err != nil {
 		panic(err)
 	}

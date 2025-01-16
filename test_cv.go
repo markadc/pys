@@ -1,7 +1,7 @@
 package main
 
 import (
-	. "CSDN/py"
+	. "CSDN/pys"
 	"bytes"
 	"encoding/json"
 	"fmt"

@@ -21,11 +21,11 @@ func main() {
 	aa := BuildURL(url, params)
 	fmt.Println(aa)
 	//fmt.Println(999)
-	//py, err := http.NewRequest("GET", "http://www.bcccaiduc.com", nil)
+	//pys, err := http.NewRequest("GET", "http://www.bcccaiduc.com", nil)
 	//if err != nil {
 	//	fmt.Println(err)
 	//}
-	//values := py.URL.Query()
+	//values := pys.URL.Query()
 	//params := map[string]string{
 	//	"name": "CLOS",
 	//	"age":  "22",
@@ -33,9 +33,9 @@ func main() {
 	//for k, v := range params {
 	//	values.Add(k, v)
 	//}
-	//py.URL.RawQuery = values.Encode()
+	//pys.URL.RawQuery = values.Encode()
 	//
-	//reqInfo := py.RequestInfo{}
+	//reqInfo := pys.RequestInfo{}
 	//fmt.Println(reqInfo.Header)
 	//fmt.Println(reqInfo.Params)
 }

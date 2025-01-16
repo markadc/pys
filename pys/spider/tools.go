@@ -1,4 +1,4 @@
-package pys
+package spider
 
 import (
 	"fmt"

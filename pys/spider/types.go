@@ -1,4 +1,4 @@
-package pys
+package spider
 
 type S = map[string]string
 

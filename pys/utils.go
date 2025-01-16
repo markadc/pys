@@ -26,4 +26,3 @@ func Nget(data A, args []string, failed any) any {
 	}
 	return data
 }
-
