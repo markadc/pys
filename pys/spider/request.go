@@ -7,17 +7,10 @@ import (
 
 func Get(url string, headers, params S) (*Response, error) {
 	// 构造请求
-	req, err := http.NewRequest("GET", url, nil)
+	req, err := http.NewRequest("GET", MakeURL(url, params), nil)
 	if err != nil {
 		return nil, err
 	}
-
-	// 查询字符串
-	values := req.URL.Query()
-	for k, v := range params {
-		values.Add(k, v)
-	}
-	req.URL.RawQuery = values.Encode()
 
 	// 设置请求头
 	for k, v := range headers {

@@ -5,6 +5,7 @@ import (
 	"strings"
 )
 
+// 根据params构建完整的URL
 func MakeURL(baseURL string, params S) string {
 	if !strings.Contains(baseURL, "?") {
 		baseURL += "?"

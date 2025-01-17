@@ -31,7 +31,7 @@ func (r Response) JsonStringify() string {
 	}
 	b, err := json.MarshalIndent(jsonData, "", "  ")
 	if err != nil {
-		log.Fatalf("JSON序列化失败: %v", err)
+		log.Fatalf("JSON serialization failed: %v", err)
 	}
 	return string(b)
 }
